@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>html5 canvas</title>
+	<style>
+		canvas{
+			border: 1px solid black;
+		}
+	</style>
+	<script>
+		function init(){
+			canvas = document.getElementById('myCanvas');
+			context = canvas.getContext('2d');
+			draw();
+		}
+
+		function draw(){
+			var x = 0, y = 0;
+			setInterval(function(){
+				x++;
+				y++;
+
+				context.fillStyle = "black";
+				context.fillRect(0,0,canvas.width,canvas.height);
+
+				context.fillStyle = "white";
+				context.beginPath();
+				context.arc(x,120,55,0,Math.PI * 2);
+				context.fill();
+
+				context.fillStyle = "red";
+				context.beginPath();
+				context.arc(150,y,78,0,Math.PI * 2);
+				context.fill();
+
+				context.fillStyle = "blue";
+				context.beginPath();
+				context.arc(350,y,38,0,Math.PI * 2);
+				context.fill();
+			},5);
+		}
+	</script>
+</head>
+
+<body onload="init()">
+
+	<canvas id ="myCanvas" height="400" width="600">
+		<p>sorry, your browser doesn't support the canvas feature :(</p>
+	</canvas>
+
+</body>
+</html>

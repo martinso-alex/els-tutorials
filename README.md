@@ -1,3 +1,7 @@
 # els-tutorials
 
-repositorio utilizado para atividades do canal eduonix learning solutions.
+Repositorio utilizado para atividades do canal eduonix learning solutions.
+
+#Snake Game concluído
+
+![ScreenShot](Snake/snake.png)

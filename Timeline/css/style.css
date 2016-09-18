@@ -2,3 +2,41 @@
 	margin: 0;
 	padding: 0;
 }
+
+body{
+	font-family: 'Arial', sans-serif;
+	background: #e9f0f9;
+}
+
+p{
+	margin: 10px;
+}
+
+.container{
+	width: 940px;
+	overflow: auto;
+	margin: auto;
+}
+
+header{
+	background: #5e6482;
+	height: 70px;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#timeline{
+	background: url(../img/line.png) repeat-y 50% 0;
+	min-height: 700px;
+	margin: 20px 0 20px 0;
+}
+
+footer{
+	background: #5e6482;
+	height: 40px;
+	color: white;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

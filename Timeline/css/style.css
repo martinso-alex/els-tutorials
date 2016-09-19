@@ -5,11 +5,15 @@
 
 body{
 	font-family: 'Arial', sans-serif;
-	background: #e9f0f9;
+	background: url(../img/codigo.png);
 }
 
 p{
 	margin: 10px;
+}
+
+img{
+	width: 100%;
 }
 
 .container{
@@ -59,7 +63,7 @@ header{
 }
 
 .tl-event{
-	background: url(../img/point-small.png) no-repeat top center;
+	background: url(../img/point-small-2.png) no-repeat top center;
 	margin: auto;
 	width: 100%;
 	overflow: hidden;

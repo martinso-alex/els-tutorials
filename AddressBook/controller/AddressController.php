@@ -44,6 +44,27 @@ switch($func){
 
 	break;
 
+	case 'update':
+
+		$id    = $_POST['id'];
+		$first = $_POST['first'];
+		$last  = $_POST['last'];
+		$email = $_POST['email'];
+		$phone = $_POST['phone'];
+		$adr1  = $_POST['adr1'];
+		$adr2  = $_POST['adr2'];
+		$city  = $_POST['city'];
+		$state = $_POST['state'];
+		$zip   = $_POST['zip'];
+		$notes = $_POST['notes'];
+		$group = $_POST['group'];
+
+		AddressService::update($id,$first,$last,$email,$phone,$adr1,$adr2,$city,$state,$zip,$notes,$group);
+		$contacts = AddressService::read();
+		AddressView::showContacts($contacts);
+
+	break;
+
 }
 
 ?>

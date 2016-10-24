@@ -49,7 +49,7 @@ class AddressDao{
 
 	public static function read (){
 
-		$sql = "SELECT * FROM addresses";
+		$sql = "SELECT * FROM addresses ORDER BY first_name";
 
 		$result = ConnectionUtil::executarSelect($sql);
 

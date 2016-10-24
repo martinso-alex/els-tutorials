@@ -20,7 +20,7 @@ class AddressView{
 				<td> '.$contact->getGroup().' </td>
 				<td>
 					<ul class="button-group" id="'.$contact->getId().'">
-						<li><a class="button tinny update">Edit</a></li>
+						<li><a data-open="altModal" class="button tinny update">Edit</a></li>
 						<li><a data-open="delModal" class="delete button tinny alert">Delete</a></li>
 					</ul>
 				</td>

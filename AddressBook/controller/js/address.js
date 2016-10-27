@@ -76,8 +76,6 @@ var update_address = function(){
 		var notes = $('#notes_alt').val();
 		var group = $('#contact_group_alt').val();
 
-		console.log(id_update+first+last+email+phone+adr1+adr2+city+state+zip+notes+group);
-
 		$.ajax({
 			type: 'POST',
 			url: 'controller/AddressController.php',
